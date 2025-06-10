@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти | Nissan</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/contacts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Nissan</span>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Головна</a></li>
+                    <li><a href="catalog.html" class="nav-link">Каталог авто</a></li>
+                    <li><a href="services.html" class="nav-link">Послуги</a></li>
+                    <li><a href="news.html" class="nav-link">Новини</a></li>
+                    <li><a href="about.html" class="nav-link">Про нас</a></li>
+                    <li><a href="contacts.html" class="nav-link active">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <button class="mobile-menu-toggle" aria-label="Відкрити меню">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="contacts-page">
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <a href="index.html">Головна</a>
+                    <span class="separator">/</span>
+                    <span class="current">Контакти</span>
+                </div>
+                <h1 class="page-title">Контакти Nissan</h1>
+            </div>
+        </section>
+
+        <section class="contacts-intro">
+            <div class="container">
+                <p class="contacts-intro-text">Ми завжди раді відповісти на ваші запитання та надати детальну інформацію про наші автомобілі та послуги. Ви можете відвідати наші автосалони, зв'язатися з нами за телефоном, електронною поштою або заповнити форму зворотного зв'язку.</p>
+            </div>
+        </section>
+
+        <section class="contacts-offices">
+            <div class="container">
+                <h2 class="section-title">Наші автосалони</h2>
+                
+                <div class="offices-grid">
+                    <div class="office-card">
+                        <div class="office-image">
+                            <img src="https://www.nissan.ua/content/dam/Nissan/nissan_europe/vehicles/qashqai/my22/overview/All-new-Nissan-Qashqai-2021-hero.jpg" alt="Автосалон Nissan у Києві">
+                        </div>
+                        <div class="office-info">
+                            <h3 class="office-city">Київ</h3>
+                            <div class="office-address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>вул. Автомобільна, 1</span>
+                            </div>
+                            <div class="office-phone">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+380501234567">+38 (050) 123-45-67</a>
+                            </div>
+                            <div class="office-email">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:kyiv@nissan.ua">kyiv@nissan.ua</a>
+                            </div>
+                            <div class="office-hours">
+                                <i class="fas fa-clock"></i>
+                                <span>Пн-Пт: 9:00-20:00, Сб-Нд: 10:00-19:00</span>
+                            </div>
+                            <a href="#map" class="btn btn-outline office-map-btn" data-location="kyiv">Показати на карті</a>
+                        </div>
+                    </div>
+                    
+                    <div class="office-card">
+                        <div class="office-image">
+                            <img src="https://www.nissan.ua/content/dam/Nissan/nissan_europe/vehicles/x-trail/my22/overview/All-new-Nissan-X-Trail-2022-hero.jpg" alt="Автосалон Nissan у Львові">
+                        </div>
+                        <div class="office-info">
+                            <h3 class="office-city">Львів</h3>
+                            <div class="office-address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>вул. Стрийська, 45</span>
+                            </div>
+                            <div class="office-phone">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+380502345678">+38 (050) 234-56-78</a>
+                            </div>
+                            <div class="office-email">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:lviv@nissan.ua">lviv@nissan.ua</a>
+                            </div>
+                            <div class="office-hours">
+                                <i class="fas fa-clock"></i>
+                                <span>Пн-Пт: 9:00-20:00, Сб-Нд: 10:00-19:00</span>
+                            </div>
+                            <a href="#map" class="btn btn-outline office-map-btn" data-location="lviv">Показати на карті</a>
+                        </div>
+                    </div>
+                    
+                    <div class="office-card">
+                        <div class="office-image">
+                            <img src="assets/img/spongebob.png" alt="Автосалон Nissan в Одесі">
+                        </div>
+                        <div class="office-info">
+                            <h3 class="office-city">Одеса</h3>
+                            <div class="office-address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Фонтанська дорога, 25</span>
+                            </div>
+                            <div class="office-phone">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+380503456789">+38 (050) 345-67-89</a>
+                            </div>
+                            <div class="office-email">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:odesa@nissan.ua">odesa@nissan.ua</a>
+                            </div>
+                            <div class="office-hours">
+                                <i class="fas fa-clock"></i>
+                                <span>Пн-Пт: 9:00-20:00, Сб-Нд: 10:00-19:00</span>
+                            </div>
+                            <a href="#map" class="btn btn-outline office-map-btn" data-location="odesa">Показати на карті</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts-map" id="map">
+            <div class="container">
+                <h2 class="section-title">Карта розташування</h2>
+                <div class="map-wrapper">
+                    <div id="officeMap" class="office-map"></div>
+                </div>
+                <div class="map-controls">
+                    <button class="map-control active" data-location="kyiv">Київ</button>
+                    <button class="map-control" data-location="lviv">Львів</button>
+                    <button class="map-control" data-location="odesa">Одеса</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts-departments">
+            <div class="container">
+                <h2 class="section-title">Відділи</h2>
+                
+                <div class="departments-grid">
+                    <div class="department-card">
+                        <div class="department-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3 class="department-name">Відділ продажів</h3>
+                        <div class="department-contact">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+380504567890">+38 (050) 456-78-90</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:sales@nissan.ua">sales@nissan.ua</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="department-card">
+                        <div class="department-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="department-name">Сервісний центр</h3>
+                        <div class="department-contact">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+380505678901">+38 (050) 567-89-01</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:service@nissan.ua">service@nissan.ua</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="department-card">
+                        <div class="department-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h3 class="department-name">Фінансовий відділ</h3>
+                        <div class="department-contact">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+380506789012">+38 (050) 678-90-12</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:finance@nissan.ua">finance@nissan.ua</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="department-card">
+                        <div class="department-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="department-name">Клієнтська підтримка</h3>
+                        <div class="department-contact">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+380507890123">+38 (050) 789-01-23</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:support@nissan.ua">support@nissan.ua</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-form-wrapper">
+                    <div class="contact-form-info">
+                        <h2 class="section-title">Зв'яжіться з нами</h2>
+                        <p class="contact-form-description">Якщо у вас є запитання щодо наших автомобілів або послуг, заповніть форму, і ми зв'яжемося з вами найближчим часом.</p>
+                        <div class="contact-social">
+                            <h3 class="contact-social-title">Ми в соціальних мережах</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="social-link" title="Telegram"><i class="fab fa-telegram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form method="POST" class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Ваше ім'я *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Телефон *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Тема</label>
+                                <select id="subject" name="subject">
+                                    <option value="general">Загальне питання</option>
+                                    <option value="sales">Купівля автомобіля</option>
+                                    <option value="service">Сервісне обслуговування</option>
+                                    <option value="finance">Фінансові питання</option>
+                                    <option value="feedback">Відгук про роботу</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Повідомлення *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <div class="form-group form-checkbox">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                <label for="consent">Я погоджуюсь на обробку персональних даних згідно з <a href="privacy.html">політикою конфіденційності</a> *</label>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Надіслати повідомлення</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Часті запитання</h2>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Як записатися на тест-драйв?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Записатися на тест-драйв можна зателефонувавши до відділу продажів за номером <a href="tel:+380501234567">+38 (050) 123-45-67</a> або відвідавши один з наших автосалонів. Ми підберемо зручний для вас час.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Як оформити кредит на автомобіль?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Для оформлення кредиту необхідно звернутися до нашого фінансового відділу. Ми співпрацюємо з багатьма банками та пропонуємо вигідні умови кредитування. При собі потрібно мати паспорт та ідентифікаційний код.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Чи можна обміняти мій старий автомобіль за програмою Trade-in?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Так, ви можете обміняти свій автомобіль на новий за програмою Trade-in. Наші фахівці оцінять ваш автомобіль і запропонують вигідні умови обміну. Це зручний спосіб придбати новий автомобіль без необхідності спочатку продавати старий.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Які документи потрібні для купівлі автомобіля?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Для купівлі автомобіля вам знадобляться: паспорт, ідентифікаційний код та документи для оплати (готівка або реквізити для безготівкового розрахунку). Якщо ви купуєте автомобіль у кредит, можуть знадобитися додаткові документи, які наш фінансовий консультант обговорить з вами.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Як часто потрібно проходити технічне обслуговування?</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Рекомендований інтервал технічного обслуговування залежить від моделі автомобіля та вказаний у сервісній книжці. Зазвичай це кожні 10 000 - 15 000 км пробігу або раз на рік. Регулярне обслуговування допомагає підтримувати автомобіль у відмінному стані та зберігає гарантію.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-text">Nissan</span>
+                    </a>
+                    <p class="footer-description">
+                        Офіційний автосалон преміальних автомобілів в Україні. Продаж, сервіс, фінансові послуги.
+                    </p>
+                    <div class="footer-contacts">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>м. Київ, вул. Автомобільна, 1</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+380501234567">+38 (050) 123-45-67</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@nissan.ua">info@nissan.ua</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Навігація</h3>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="catalog.html">Каталог авто</a></li>
+                        <li><a href="services.html">Послуги</a></li>
+                        <li><a href="news.html">Новини</a></li>
+                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3 class="footer-title">Послуги</h3>
+                    <ul class="footer-menu">
+                        <li><a href="services.html#sales">Продаж авто</a></li>
+                        <li><a href="services.html#service">Сервісне обслуговування</a></li>
+                        <li><a href="services.html#financing">Кредитування</a></li>
+                        <li><a href="services.html#insurance">Страхування</a></li>
+                        <li><a href="services.html#tradein">Trade-in</a></li>
+                        <li><a href="services.html#warranty">Гарантія</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3 class="footer-title">Ми в соцмережах</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                    <div class="footer-subscribe">
+                        <h3 class="footer-title">Підписатися на новини</h3>
+                        <form action="#" method="POST" class="subscribe-form">
+                            <input type="email" name="email" placeholder="Ваш email" required>
+                            <button type="submit" class="btn btn-primary">OK</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 Nissan. Всі права захищені.
+                </div>
+                <div class="footer-policy">
+                    <a href="privacy.html">Політика конфіденційності</a>
+                    <a href="terms.html">Умови використання</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Прокрутити догори">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/contacts.js"></script>
+    <!-- Підключаємо Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html> 

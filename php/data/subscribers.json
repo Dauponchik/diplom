@@ -1,0 +1,23 @@
+[
+    {
+        "id": "6847987fbc0fc",
+        "email": "makcim152987@gmail.com",
+        "subscribed_at": "2025-06-10 02:29:19",
+        "status": "active",
+        "source": "http:\/\/localhost:8000\/debug-forms.html"
+    },
+    {
+        "id": "68479929cc17a",
+        "email": "nemoye3758@oziere.com",
+        "subscribed_at": "2025-06-10 02:32:09",
+        "status": "active",
+        "source": "http:\/\/localhost:8000\/index.html"
+    },
+    {
+        "id": "6847a2b772cf1",
+        "email": "gffg@gmail.com",
+        "subscribed_at": "2025-06-10 03:12:55",
+        "status": "active",
+        "source": "http:\/\/localhost:8000\/index.html"
+    }
+]

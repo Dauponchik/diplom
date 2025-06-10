@@ -1,0 +1,685 @@
+/* Стилі для форм та валідації */
+
+/* Помилки полів */
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.field-error {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+/* Повідомлення про помилки */
+.notifications-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    max-width: 400px;
+}
+
+.notification {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-left: 4px solid;
+    animation: slideInRight 0.3s ease-out;
+}
+
+.notification-success {
+    border-left-color: #28a745;
+}
+
+.notification-error {
+    border-left-color: #dc3545;
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.notification-content i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.notification-success .notification-content i {
+    color: #28a745;
+}
+
+.notification-error .notification-content i {
+    color: #dc3545;
+}
+
+.notification-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #999;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+    line-height: 1;
+}
+
+.notification-close:hover {
+    color: #666;
+}
+
+/* Модальне вікно успіху */
+.success-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10001;
+    display: none;
+}
+
+.success-modal .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.success-modal .modal-content {
+    background: white;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    animation: modalSlideIn 0.3s ease-out;
+    text-align: center;
+}
+
+.success-modal .modal-header {
+    padding: 24px 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 24px;
+}
+
+.success-modal .modal-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #28a745;
+}
+
+.success-modal .modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.2s ease;
+    padding: 4px;
+    line-height: 1;
+}
+
+.success-modal .modal-close:hover {
+    color: #28a745;
+}
+
+.success-modal .modal-body {
+    padding: 0 24px 24px;
+    text-align: center;
+}
+
+.success-icon {
+    margin-bottom: 20px;
+}
+
+.success-icon i {
+    font-size: 4rem;
+    color: #28a745;
+}
+
+.modal-message {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #666;
+    white-space: pre-line;
+}
+
+.modal-footer {
+    padding: 0 24px 24px;
+    text-align: center;
+}
+
+.modal-ok {
+    min-width: 100px;
+}
+
+/* Стан завантаження для кнопок */
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn:disabled .fa-spinner {
+    margin-right: 8px;
+}
+
+/* Анімації */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Запобігання прокрутці коли модальне вікно відкрите */
+body.modal-open {
+    overflow: hidden;
+}
+
+/* Покращення стилів для форм */
+.form-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    background-color: #fff;
+    color: #333 !important;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1A2B47;
+    box-shadow: 0 0 0 0.2rem rgba(26, 43, 71, 0.25);
+    color: #333 !important;
+}
+
+.form-group select {
+    color: #333 !important;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.75rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+}
+
+.form-group select option {
+    background-color: #fff;
+    color: #333 !important;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+/* Checkbox стилі */
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.checkbox-label.error {
+    color: #dc3545;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #1A2B47;
+    border-color: #1A2B47;
+    color: #fff;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background-color: #15243b;
+    border-color: #15243b;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border-color: #1A2B47;
+    color: #1A2B47;
+}
+
+.btn-outline:hover:not(:disabled) {
+    background-color: #1A2B47;
+    color: #fff;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn-with-icon i {
+    margin-right: 8px;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    .notifications-container {
+        left: 20px;
+        right: 20px;
+        max-width: none;
+    }
+    
+    .modal-overlay:not(.success-modal .modal-overlay) {
+        padding: 10px;
+    }
+    
+    .modal-content:not(.success-modal .modal-content) {
+        max-height: 95vh;
+    }
+    
+    .modal-header:not(.success-modal .modal-header) {
+        padding: 20px 20px 0;
+        margin-bottom: 20px;
+    }
+    
+    .modal-title:not(.success-modal .modal-title) {
+        font-size: 18px;
+    }
+    
+    .modal-body:not(.success-modal .modal-body) {
+        padding: 0 20px 20px;
+    }
+    
+    .modal-description {
+        padding: 0 20px 15px;
+        margin-top: -10px;
+    }
+    
+    .success-modal .modal-overlay {
+        padding: 10px;
+    }
+    
+    .success-modal .modal-content {
+        max-height: 95vh;
+    }
+    
+    .success-modal .modal-header {
+        padding: 20px 20px 0;
+        margin-bottom: 20px;
+    }
+    
+    .success-modal .modal-title {
+        font-size: 18px;
+    }
+    
+    .success-modal .modal-body {
+        padding: 0 20px 20px;
+    }
+    
+    .success-icon i {
+        font-size: 3rem;
+    }
+}
+
+/* Спеціальні стилі для форми тест-драйву */
+.testdrive-form .form-group {
+    margin-bottom: 20px;
+}
+
+.testdrive-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #333;
+}
+
+.testdrive-form input,
+.testdrive-form select,
+.testdrive-form textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    background: white;
+    color: #333 !important;
+}
+
+.testdrive-form input:focus,
+.testdrive-form select:focus,
+.testdrive-form textarea:focus {
+    outline: none;
+    border-color: #1A2B47;
+    box-shadow: 0 0 0 3px rgba(26, 43, 71, 0.1);
+    color: #333 !important;
+}
+
+.testdrive-form select {
+    color: #333 !important;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+}
+
+.testdrive-form select option {
+    background-color: white;
+    color: #333 !important;
+}
+
+.testdrive-form input::placeholder,
+.testdrive-form textarea::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+.testdrive-form .checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.testdrive-form .checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    margin-top: 2px;
+}
+
+.testdrive-form .checkbox-text a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.testdrive-form .checkbox-text a:hover {
+    text-decoration: underline;
+}
+
+.testdrive-form .btn-full {
+    width: 100%;
+    margin-top: 12px;
+}
+
+/* Модальне вікно тест-драйву */
+.modal-overlay:not(.success-modal .modal-overlay) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    padding: 20px;
+}
+
+.modal-content:not(.success-modal .modal-content) {
+    background: white;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+.modal-header:not(.success-modal .modal-header) {
+    padding: 24px 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 24px;
+}
+
+.modal-title:not(.success-modal .modal-title) {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1A2B47;
+}
+
+.modal-close:not(.success-modal .modal-close) {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.2s ease;
+    padding: 4px;
+    line-height: 1;
+}
+
+.modal-close:not(.success-modal .modal-close):hover {
+    color: #1A2B47;
+}
+
+.modal-body:not(.success-modal .modal-body) {
+    padding: 0 24px 24px;
+}
+
+.modal-description {
+    padding: 0 24px 20px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: -15px;
+}
+
+.modal-description p {
+    margin: 0;
+}
+
+/* Стилі для підписки на новини */
+.subscribe-form-large {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group-inline {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.form-group-inline input {
+    flex: 1;
+}
+
+.form-group-inline button {
+    flex-shrink: 0;
+}
+
+@media (max-width: 576px) {
+    .form-group-inline {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .form-group-inline button {
+        width: 100%;
+    }
+}
+
+/* Стилі для контактних форм */
+.contact-form input,
+.contact-form select,
+.contact-form textarea,
+.service-form input,
+.service-form select,
+.service-form textarea,
+.tradein-form input,
+.tradein-form select,
+.tradein-form textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    background-color: #fff;
+    color: #333 !important;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus,
+.service-form input:focus,
+.service-form select:focus,
+.service-form textarea:focus,
+.tradein-form input:focus,
+.tradein-form select:focus,
+.tradein-form textarea:focus {
+    outline: none;
+    border-color: #1A2B47;
+    box-shadow: 0 0 0 3px rgba(26, 43, 71, 0.1);
+    color: #333 !important;
+}
+
+.contact-form select,
+.service-form select,
+.tradein-form select {
+    color: #333 !important;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.75rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+}
+
+.contact-form select option,
+.service-form select option,
+.tradein-form select option {
+    background-color: #fff;
+    color: #333 !important;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder,
+.service-form input::placeholder,
+.service-form textarea::placeholder,
+.tradein-form input::placeholder,
+.tradein-form textarea::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+/* Стилі для форми підписки */
+.subscribe-form-large input,
+.subscribe-form input {
+    background-color: #fff;
+    color: #333 !important;
+    border: 1px solid #ddd;
+}
+
+.subscribe-form-large input:focus,
+.subscribe-form input:focus {
+    color: #333 !important;
+    outline: none;
+    border-color: #1A2B47;
+}
+
+.subscribe-form-large input::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+/* Виправлення для footer підписки (темний фон) */
+.main-footer .subscribe-form input {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff !important;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main-footer .subscribe-form input:focus {
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.main-footer .subscribe-form input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 1;
+} 

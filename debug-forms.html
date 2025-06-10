@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест форм Nissan</title>
+    <link rel="stylesheet" href="assets/css/forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-container { max-width: 600px; margin: 0 auto; }
+        .form-section { margin-bottom: 40px; padding: 20px; border: 1px solid #ddd; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🧪 Тест форм Nissan</h1>
+        
+        <!-- Тест форми зворотного зв'язку -->
+        <div class="form-section">
+            <h2>📞 Форма зворотного зв'язку</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Ваше ім'я</label>
+                    <input type="text" id="name" name="name" placeholder="Мінімум 2 символи">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+38 (050) 123-45-67">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Повідомлення</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Мінімум 10 символів..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="privacy" required>
+                        <span class="checkbox-text">Я погоджуюсь з політикою конфіденційності</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Надіслати запит</button>
+            </form>
+        </div>
+
+        <!-- Тест форми підписки -->
+        <div class="form-section">
+            <h2>📧 Форма підписки</h2>
+            <form class="subscribe-form">
+                <div class="form-group">
+                    <label for="sub-email">Email для підписки</label>
+                    <input type="email" name="email" id="sub-email" placeholder="Ваш email">
+                </div>
+                <button type="submit" class="btn btn-primary">Підписатися</button>
+            </form>
+        </div>
+
+        <!-- Статус -->
+        <div class="form-section">
+            <h2>🔍 Статус завантаження</h2>
+            <p id="js-status">❌ JavaScript не завантажено</p>
+            <p id="css-status">❌ CSS не завантажено</p>
+        </div>
+    </div>
+
+    <script src="assets/js/forms.js"></script>
+    <script>
+        // Перевірка завантаження
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('js-status').innerHTML = '✅ JavaScript завантажено';
+            
+            // Перевірка CSS
+            const testDiv = document.createElement('div');
+            testDiv.className = 'notification';
+            document.body.appendChild(testDiv);
+            const styles = getComputedStyle(testDiv);
+            if (styles.position === 'fixed') {
+                document.getElementById('css-status').innerHTML = '✅ CSS завантажено';
+            }
+            document.body.removeChild(testDiv);
+
+            // Тестове повідомлення
+            setTimeout(() => {
+                if (window.FormHandler) {
+                    const handler = new FormHandler();
+                    handler.showNotification('🎉 Система повідомлень працює!', 'success');
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html> 

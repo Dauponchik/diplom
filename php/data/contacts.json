@@ -1,0 +1,90 @@
+[
+    {
+        "id": "684798779a6d3",
+        "name": "ggg",
+        "phone": "+3809546656",
+        "email": "gg7@gmail.com",
+        "message": "ggggggggggggg",
+        "created_at": "2025-06-10 02:29:11",
+        "status": "new",
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/134.0.0.0 Safari\/537.36"
+    },
+    {
+        "id": "6847987bac460",
+        "name": "ggg",
+        "phone": "+3809546656",
+        "email": "gg7@gmail.com",
+        "message": "ggggggggggggg",
+        "created_at": "2025-06-10 02:29:15",
+        "status": "new",
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/134.0.0.0 Safari\/537.36"
+    },
+    {
+        "id": "68479c6c1786c",
+        "name": "PR1_family",
+        "phone": "+3809546656",
+        "email": "tipokrytoi685@gmail.com",
+        "message": "fhfghfghfhfhfgh",
+        "created_at": "2025-06-10 02:46:04",
+        "status": "new",
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/134.0.0.0 Safari\/537.36"
+    },
+    {
+        "id": "68479c702c3e4",
+        "name": "PR1_family",
+        "phone": "+3809546656",
+        "email": "tipokrytoi685@gmail.com",
+        "message": "fhfghfghfhfhfgh",
+        "created_at": "2025-06-10 02:46:08",
+        "status": "new",
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/134.0.0.0 Safari\/537.36"
+    },
+    {
+        "id": "6847a2fe4bc4b",
+        "name": "Daupon",
+        "phone": "+3809546656",
+        "email": "djrgkd@gmail.com",
+        "message": "dggdgdgdgdgdg",
+        "created_at": "2025-06-10 03:14:06",
+        "status": "new",
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/134.0.0.0 Safari\/537.36"
+    },
+    {
+        "id": "6847a3025d6b5",
+        "name": "Daupon",
+        "phone": "+3809546656",
+        "email": "djrgkd@gmail.com",
+        "message": "dggdgdgdgdgdg",
+        "created_at": "2025-06-10 03:14:10",
+        "status": "new",
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/134.0.0.0 Safari\/537.36"
+    },
+    {
+        "id": "6847acc8c0443",
+        "name": "ggg",
+        "phone": "+380936514990",
+        "email": "ferrari.makcim@gmail.com",
+        "message": "пвапавпвпвапв",
+        "created_at": "2025-06-10 03:55:52",
+        "status": "new",
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/134.0.0.0 Safari\/537.36"
+    },
+    {
+        "id": "6847acdec9865",
+        "name": "ggg",
+        "phone": "+380936514990",
+        "email": "ferrari.makcim@gmail.com",
+        "message": "павпвпвпвап",
+        "created_at": "2025-06-10 03:56:14",
+        "status": "new",
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/134.0.0.0 Safari\/537.36"
+    }
+]

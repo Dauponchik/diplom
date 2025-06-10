@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nissan Juke | Nissan</title>
+    <!-- Підключення стилів -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/car-details.css">
+    <link rel="stylesheet" href="assets/css/forms.css">
+    <!-- Підключення шрифтів Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome для іконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка сайту -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Nissan</span>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Головна</a></li>
+                    <li><a href="catalog.html" class="nav-link active">Каталог авто</a></li>
+                    <li><a href="services.html" class="nav-link">Послуги</a></li>
+                    <li><a href="news.html" class="nav-link">Новини</a></li>
+                    <li><a href="about.html" class="nav-link">Про нас</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <button class="mobile-menu-toggle" aria-label="Відкрити меню">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основний контент -->
+    <main class="car-details-page">
+        <!-- Заголовок сторінки і хлібні крихти -->
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <a href="index.html">Головна</a>
+                    <span class="separator">/</span>
+                    <a href="catalog.html">Каталог автомобілів</a>
+                    <span class="separator">/</span>
+                    <span class="current">Nissan Juke</span>
+                </div>
+                <h1 class="page-title">Nissan Juke <span class="model-year">2024</span></h1>
+            </div>
+        </section>
+
+        <!-- Галерея та інформація про автомобіль -->
+        <section class="car-main-info">
+            <div class="container">
+                <div class="car-details-grid">
+                    <!-- Галерея автомобіля -->
+                    <div class="car-gallery">
+                        <div class="main-image">
+                            <img src="./assets/img/Nissan Juke.png" alt="Nissan Juke" id="mainImage">
+                            <div class="car-badge">Молодіжний</div>
+                        </div>
+                    </div>
+
+                    <!-- Основна інформація про автомобіль -->
+                    <div class="car-info">
+                        <div class="car-price-block">
+                            <div class="car-price">$25,000</div>
+                            <div class="car-price-options">
+                                <div class="price-option">
+                                    <span class="price-label">Кредит від:</span>
+                                    <span class="price-value">$510/міс</span>
+                                </div>
+                                <div class="price-option">
+                                    <span class="price-label">Лізинг від:</span>
+                                    <span class="price-value">$590/міс</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="car-actions">
+                            <button class="btn btn-primary btn-full btn-with-icon" id="testDriveBtn">
+                                <i class="fas fa-calendar-alt"></i> Записатися на тест-драйв
+                            </button>
+                        </div>
+
+                        <div class="car-key-specs">
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-car"></i></div>
+                                <div class="spec-name">Тип кузова</div>
+                                <div class="spec-value">Кросовер</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-gas-pump"></i></div>
+                                <div class="spec-name">Паливо</div>
+                                <div class="spec-value">Бензин</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                <div class="spec-name">Потужність</div>
+                                <div class="spec-value">114 к.с.</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-cogs"></i></div>
+                                <div class="spec-name">Трансмісія</div>
+                                <div class="spec-value">6-МТ</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-road"></i></div>
+                                <div class="spec-name">Привід</div>
+                                <div class="spec-value">Передній</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon"><i class="fas fa-tint"></i></div>
+                                <div class="spec-name">Витрата</div>
+                                <div class="spec-value">5.4 л/100км</div>
+                            </div>
+                        </div>
+
+                        <div class="car-availability">
+                            <div class="availability-status available">
+                                <i class="fas fa-check-circle"></i> В наявності
+                            </div>
+                            <div class="dealer-location">
+                                <i class="fas fa-map-marker-alt"></i> Київ, вул. Автомобільна, 1
+                            </div>
+                        </div>
+
+                        <div class="car-contact">
+                            <a href="tel:+380501234567" class="btn btn-outline btn-with-icon">
+                                <i class="fas fa-phone"></i> +38 (050) 123-45-67
+                            </a>
+                            <a href="#contact-form" class="btn btn-outline btn-with-icon">
+                                <i class="fas fa-envelope"></i> Написати нам
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма зворотного зв'язку -->
+        <section class="contact-section" id="contact-form">
+            <div class="container">
+                <h2 class="section-title">Зв'язатися з нами</h2>
+                <div class="contact-form-container">
+                    <form method="POST" class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ваше ім'я</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Повідомлення</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkbox-text">Я погоджуюсь з <a href="privacy.html">політикою конфіденційності</a></span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Надіслати запит</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Таби з детальною інформацією -->
+        <section class="car-details-tabs">
+            <div class="container">
+                <div class="tabs">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" data-tab="specifications">Технічні характеристики</button>
+                        <button class="tab-btn" data-tab="equipment">Комплектація</button>
+                        <button class="tab-btn" data-tab="description">Опис</button>
+                    </div>
+                    <div class="tabs-content">
+                        <!-- Технічні характеристики -->
+                        <div class="tab-panel active" id="specifications">
+                            <div class="specs-table">
+                                <div class="specs-group">
+                                    <h3 class="specs-group-title">Основні характеристики</h3>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Марка</div>
+                                        <div class="specs-value">Nissan</div>
+                                    </div>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Модель</div>
+                                        <div class="specs-value">Juke</div>
+                                    </div>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Рік випуску</div>
+                                        <div class="specs-value">2024</div>
+                                    </div>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Тип кузова</div>
+                                        <div class="specs-value">Компактний кросовер</div>
+                                    </div>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Кількість дверей</div>
+                                        <div class="specs-value">5</div>
+                                    </div>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Кількість місць</div>
+                                        <div class="specs-value">5</div>
+                                    </div>
+                                </div>
+
+                                <div class="specs-group">
+                                    <h3 class="specs-group-title">Двигун</h3>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Тип</div>
+                                        <div class="specs-value">Бензиновий турбо</div>
+                                    </div>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Об'єм</div>
+                                        <div class="specs-value">1.0 л</div>
+                                    </div>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Потужність</div>
+                                        <div class="specs-value">114 к.с.</div>
+                                    </div>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Крутний момент</div>
+                                        <div class="specs-value">200 Нм</div>
+                                    </div>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Розташування</div>
+                                        <div class="specs-value">Спереду, поперечно</div>
+                                    </div>
+                                </div>
+
+                                <div class="specs-group">
+                                    <h3 class="specs-group-title">Трансмісія</h3>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Тип</div>
+                                        <div class="specs-value">Механічна</div>
+                                    </div>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Кількість передач</div>
+                                        <div class="specs-value">6</div>
+                                    </div>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Привід</div>
+                                        <div class="specs-value">Передній</div>
+                                    </div>
+                                </div>
+
+                                <div class="specs-group">
+                                    <h3 class="specs-group-title">Динамічні характеристики</h3>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Розгін 0-100 км/год</div>
+                                        <div class="specs-value">10.4 с</div>
+                                    </div>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Максимальна швидкість</div>
+                                        <div class="specs-value">180 км/год</div>
+                                    </div>
+                                </div>
+
+                                <div class="specs-group">
+                                    <h3 class="specs-group-title">Витрата палива</h3>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Міський цикл</div>
+                                        <div class="specs-value">6.4 л/100км</div>
+                                    </div>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Заміський цикл</div>
+                                        <div class="specs-value">4.7 л/100км</div>
+                                    </div>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Змішаний цикл</div>
+                                        <div class="specs-value">5.4 л/100км</div>
+                                    </div>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Об'єм паливного бака</div>
+                                        <div class="specs-value">46 л</div>
+                                    </div>
+                                </div>
+
+                                <div class="specs-group">
+                                    <h3 class="specs-group-title">Габарити</h3>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Довжина</div>
+                                        <div class="specs-value">4210 мм</div>
+                                    </div>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Ширина</div>
+                                        <div class="specs-value">1800 мм</div>
+                                    </div>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Висота</div>
+                                        <div class="specs-value">1595 мм</div>
+                                    </div>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Колісна база</div>
+                                        <div class="specs-value">2636 мм</div>
+                                    </div>
+                                    <div class="specs-row">
+                                        <div class="specs-name">Об'єм багажника</div>
+                                        <div class="specs-value">422 л</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Комплектація -->
+                        <div class="tab-panel" id="equipment">
+                            <div class="equipment-list">
+                                <div class="equipment-group">
+                                    <h3 class="equipment-group-title">Екстер'єр</h3>
+                                    <ul class="equipment-items">
+                                        <li>Легкосплавні диски 17"</li>
+                                        <li>LED фари</li>
+                                        <li>LED задні ліхтарі</li>
+                                        <li>Контрастний дах</li>
+                                        <li>Спойлер</li>
+                                        <li>Протитуманні фари</li>
+                                        <li>Пластикові захисні накладки</li>
+                                    </ul>
+                                </div>
+
+                                <div class="equipment-group">
+                                    <h3 class="equipment-group-title">Інтер'єр</h3>
+                                    <ul class="equipment-items">
+                                        <li>Тканинні сидіння</li>
+                                        <li>Регулювання сидіння водія</li>
+                                        <li>Складні задні сидіння</li>
+                                        <li>Кондиціонер</li>
+                                        <li>Мультифункціональне кермо</li>
+                                        <li>Електропривідні вікна</li>
+                                        <li>Центральний замок</li>
+                                        <li>Іммобілайзер</li>
+                                    </ul>
+                                </div>
+
+                                <div class="equipment-group">
+                                    <h3 class="equipment-group-title">Мультимедіа</h3>
+                                    <ul class="equipment-items">
+                                        <li>Дисплей 8"</li>
+                                        <li>Apple CarPlay та Android Auto</li>
+                                        <li>Bluetooth</li>
+                                        <li>4 динаміки</li>
+                                        <li>USB порт</li>
+                                        <li>AUX вхід</li>
+                                        <li>FM/AM радіо</li>
+                                    </ul>
+                                </div>
+
+                                <div class="equipment-group">
+                                    <h3 class="equipment-group-title">Безпека</h3>
+                                    <ul class="equipment-items">
+                                        <li>Intelligent Emergency Braking</li>
+                                        <li>Blind Spot Warning</li>
+                                        <li>Lane Departure Warning</li>
+                                        <li>Traffic Sign Recognition</li>
+                                        <li>6 подушок безпеки</li>
+                                        <li>ABS</li>
+                                        <li>ESP</li>
+                                        <li>Hill Start Assist</li>
+                                        <li>Задні паркувальні датчики</li>
+                                    </ul>
+                                </div>
+
+                                <div class="equipment-group">
+                                    <h3 class="equipment-group-title">Комфорт</h3>
+                                    <ul class="equipment-items">
+                                        <li>Безключовий доступ</li>
+                                        <li>Кнопка запуску двигуна</li>
+                                        <li>Круїз-контроль</li>
+                                        <li>Електрорегулювання дзеркал</li>
+                                        <li>Дистанційне керування замками</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Опис -->
+                        <div class="tab-panel" id="description">
+                            <div class="car-description">
+                                <p>Nissan Juke — це унікальний компактний кросовер, який не залишає нікого байдужим. Його експресивний дизайн і яскравий характер роблять Juke ідеальним вибором для молодих та активних водіїв.</p>
+                                
+                                <p>Оновлений Juke 2024 року поєднує в собі спортивний стиль купе та практичність кросовера. Характерна зовнішність з виразними LED фарами, контрастним дахом та динамічними лініями кузова підкреслює індивідуальність власника.</p>
+                                
+                                <p>Компактний 1.0-літровий турбодвигун з безпосереднім впорскуванням забезпечує відмінний баланс між потужністю та економічністю. Витрата палива всього 5.4 л/100км робить Juke ідеальним автомобілем для міської їзди.</p>
+                                
+                                <p>Інтер'єр Juke вражає своєю ергономікою та якістю матеріалів. Сучасна мультимедійна система з підтримкою Apple CarPlay та Android Auto забезпечує безперервний зв'язок зі смартфоном.</p>
+                                
+                                <p>Попри компактні розміри, Juke пропонує просторий салон та достатній багажник для повсякденних потреб. Nissan Juke 2024 — це ідеальне поєднання стилю, ефективності та інновацій.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Схожі автомобілі -->
+        <section class="similar-cars">
+            <div class="container">
+                <h2 class="section-title">Схожі автомобілі</h2>
+                <div class="cars-slider">
+                    <div class="car-card">
+                        <div class="car-image">
+                            <img src="./assets/img/Nissan Qashqai.png" alt="Nissan Qashqai">
+                        </div>
+                        <div class="car-details">
+                            <h3 class="car-title">Nissan Qashqai</h3>
+                            <div class="car-specs">
+                                <span class="car-year">2023</span> |
+                                <span class="car-engine">1.3 TCe</span> |
+                                <span class="car-power">158 к.с.</span>
+                            </div>
+                            <div class="car-price">$32,000</div>
+                            <div class="car-actions">
+                                <a href="car-details.html" class="btn btn-outline">Детальніше</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="car-card">
+                        <div class="car-image">
+                            <img src="./assets/img/Nissan Leaf.png" alt="Nissan Leaf">
+                        </div>
+                        <div class="car-details">
+                            <h3 class="car-title">Nissan Leaf</h3>
+                            <div class="car-specs">
+                                <span class="car-year">2024</span> |
+                                <span class="car-engine">Електричний</span> |
+                                <span class="car-power">150 к.с.</span>
+                            </div>
+                            <div class="car-price">$29,000</div>
+                            <div class="car-actions">
+                                <a href="leaf.html" class="btn btn-outline">Детальніше</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="car-card">
+                        <div class="car-image">
+                            <img src="./assets/img/Nissan X-Trail.png" alt="Nissan X-Trail">
+                        </div>
+                        <div class="car-details">
+                            <h3 class="car-title">Nissan X-Trail</h3>
+                            <div class="car-specs">
+                                <span class="car-year">2022</span> |
+                                <span class="car-engine">1.5 CVT</span> |
+                                <span class="car-power">204 к.с.</span>
+                            </div>
+                            <div class="car-price">$38,000</div>
+                            <div class="car-actions">
+                                <a href="x-trail.html" class="btn btn-outline">Детальніше</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Підвал сайту -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-text">Nissan</span>
+                    </a>
+                    <p class="footer-description">
+                        Офіційний автосалон преміальних автомобілів в Україні. Продаж, сервіс, фінансові послуги.
+                    </p>
+                    <div class="footer-contacts">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>м. Київ, вул. Автомобільна, 1</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+380501234567">+38 (050) 123-45-67</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@nissan.ua">info@nissan.ua</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Навігація</h3>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="catalog.html">Каталог авто</a></li>
+                        <li><a href="services.html">Послуги</a></li>
+                        <li><a href="news.html">Новини</a></li>
+                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3 class="footer-title">Послуги</h3>
+                    <ul class="footer-menu">
+                        <li><a href="services.html#sales">Продаж авто</a></li>
+                        <li><a href="services.html#service">Сервісне обслуговування</a></li>
+                        <li><a href="services.html#financing">Кредитування</a></li>
+                        <li><a href="services.html#insurance">Страхування</a></li>
+                        <li><a href="services.html#tradein">Trade-in</a></li>
+                        <li><a href="services.html#warranty">Гарантія</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3 class="footer-title">Ми в соцмережах</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                    <div class="footer-subscribe">
+                        <h3 class="footer-title">Підписатися на новини</h3>
+                        <form action="#" method="POST" class="subscribe-form">
+                            <input type="email" name="email" placeholder="Ваш email" required>
+                            <button type="submit" class="btn btn-primary">OK</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 Nissan. Всі права захищені.
+                </div>
+                <div class="footer-policy">
+                    <a href="privacy.html">Політика конфіденційності</a>
+                    <a href="terms.html">Умови використання</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка прокрутки догори -->
+    <button class="scroll-top" id="scrollTop" aria-label="Прокрутити догори">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Модальне вікно тест-драйву -->
+    <div class="modal-overlay" id="testDriveModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Записатися на тест-драйв</h3>
+                <button class="modal-close" id="closeTestDriveModal">&times;</button>
+            </div>
+            <div class="modal-description">
+                <p>Оберіть автомобіль своєї мрії та запишіться на тест-драйв в зручний для Вас час</p>
+            </div>
+            <div class="modal-body">
+                <form id="testdrive-form" action="#" method="POST" class="testdrive-form">
+                    <div class="form-group">
+                        <label for="car_model">Модель автомобіля</label>
+                        <select name="car_model" id="car_model" required>
+                            <option value="">Оберіть модель</option>
+                            <option value="Nissan Qashqai">Nissan Qashqai</option>
+                            <option value="Nissan X-Trail">Nissan X-Trail</option>
+                            <option value="Nissan Leaf">Nissan Leaf</option>
+                            <option value="Nissan Juke" selected>Nissan Juke</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Ваше ім'я</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Бажана дата</label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Бажаний час</label>
+                        <select name="time" id="time" required>
+                            <option value="">Оберіть час</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Коментар (необов'язково)</label>
+                        <textarea name="comment" id="comment" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="privacy" required>
+                            <span class="checkbox-text">Я погоджуюсь з <a href="privacy.html">політикою конфіденційності</a></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Записатися</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/car-details.js"></script>
+    <script src="assets/js/forms.js"></script>
+    <script>
+        // Ініціалізація модального вікна тест-драйву
+        document.addEventListener('DOMContentLoaded', () => {
+            const testDriveBtn = document.getElementById('testDriveBtn');
+            const testDriveModal = document.getElementById('testDriveModal');
+            const closeModal = document.getElementById('closeTestDriveModal');
+
+            if (testDriveBtn && testDriveModal) {
+                testDriveBtn.addEventListener('click', () => {
+                    testDriveModal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                });
+
+                closeModal.addEventListener('click', () => {
+                    testDriveModal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                });
+
+                testDriveModal.addEventListener('click', (e) => {
+                    if (e.target === testDriveModal) {
+                        testDriveModal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html> 

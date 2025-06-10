@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Послуги | Nissan</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="assets/css/forms.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Nissan</span>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Головна</a></li>
+                    <li><a href="catalog.html" class="nav-link">Каталог авто</a></li>
+                    <li><a href="services.html" class="nav-link active">Послуги</a></li>
+                    <li><a href="news.html" class="nav-link">Новини</a></li>
+                    <li><a href="about.html" class="nav-link">Про нас</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <button class="mobile-menu-toggle" aria-label="Відкрити меню">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="services-page">
+        <section class="page-header">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <a href="index.html">Головна</a>
+                    <span class="separator">/</span>
+                    <span class="current">Послуги</span>
+                </div>
+                <h1 class="page-title">Послуги автосалону</h1>
+            </div>
+        </section>
+
+        <section class="services-intro">
+            <div class="container">
+                <div class="intro-content">
+                    <p class="intro-text">Nissan пропонує повний комплекс послуг для покупки, обслуговування та експлуатації вашого автомобіля. Наша мета — забезпечити максимальний комфорт і задоволення від володіння преміальним авто.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-list" id="sales">
+            <div class="container">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="./assets/img/sellcar.jpg" alt="Продаж автомобілів Nissan">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h2 class="service-title">Продаж нових автомобілів</h2>
+                        <div class="service-description">
+                            <p>Nissan є офіційним дилером преміальних автомобільних брендів. У нашому автосалоні представлені найновіші моделі від провідних виробників світу.</p>
+                            <ul class="service-features">
+                                <li>Широкий вибір комплектацій та кольорів</li>
+                                <li>Тест-драйв перед покупкою</li>
+                                <li>Індивідуальний підхід до кожного клієнта</li>
+                                <li>Можливість замовлення автомобіля з індивідуальними опціями</li>
+                                <li>Професійна консультація щодо вибору моделі</li>
+                            </ul>
+                        </div>
+                        <div class="service-actions">
+                            <a href="catalog.html" class="btn btn-primary">Переглянути каталог</a>
+                            <a href="#contact-form" class="btn btn-outline">Зв'язатися з нами</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-list" id="service">
+            <div class="container">
+                <div class="service-card reversed">
+                    <div class="service-image">
+                        <img src="./assets/img/service.jpg" alt="Сервісне обслуговування Nissan">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h2 class="service-title">Сервісне обслуговування</h2>
+                        <div class="service-description">
+                            <p>Наш сервісний центр оснащений найсучаснішим діагностичним та ремонтним обладнанням. Використовуємо оригінальні запчастини та матеріали, рекомендовані виробниками.</p>
+                            <ul class="service-features">
+                                <li>Регулярне технічне обслуговування</li>
+                                <li>Гарантійний ремонт</li>
+                                <li>Діагностика всіх систем автомобіля</li>
+                                <li>Кузовний ремонт будь-якої складності</li>
+                                <li>Шиномонтаж та балансування</li>
+                                <li>Встановлення додаткового обладнання</li>
+                            </ul>
+                        </div>
+                        <div class="service-actions">
+                            <a href="#service-form" class="btn btn-primary">Записатися на сервіс</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-list" id="financing">
+            <div class="container">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="./assets/img/credit.jfif" alt="Фінансові послуги Nissan">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h2 class="service-title">Кредитування та лізинг</h2>
+                        <div class="service-description">
+                            <p>Nissan пропонує вигідні умови кредитування та лізингу автомобілів у співпраці з провідними банками та фінансовими компаніями України.</p>
+                            <ul class="service-features">
+                                <li>Кредит з мінімальним першим внеском від 10%</li>
+                                <li>Лізинг для фізичних та юридичних осіб</li>
+                                <li>Гнучкі програми фінансування</li>
+                                <li>Спеціальні пропозиції для постійних клієнтів</li>
+                                <li>Консультація фінансових експертів</li>
+                            </ul>
+                        </div>
+                        <div class="service-actions">
+                            <a href="#" class="btn btn-primary" data-modal="calculator">Кредитний калькулятор</a>
+                            <a href="#contact-form" class="btn btn-outline">Консультація</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-list" id="insurance">
+            <div class="container">
+                <div class="service-card reversed">
+                    <div class="service-image">
+                        <img src="./assets/img/garant.jfif" alt="Страхування Nissan">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h2 class="service-title">Страхування</h2>
+                        <div class="service-description">
+                            <p>Ми співпрацюємо з надійними страховими компаніями, щоб запропонувати вам найкращі програми страхування для вашого автомобіля.</p>
+                            <ul class="service-features">
+                                <li>КАСКО з розширеним покриттям</li>
+                                <li>ОСЦПВ (обов'язкове страхування)</li>
+                                <li>Додаткове страхування від нещасних випадків</li>
+                                <li>Вигідні умови для клієнтів автосалону</li>
+                                <li>Швидке оформлення страхових полісів</li>
+                                <li>Допомога при врегулюванні страхових випадків</li>
+                            </ul>
+                        </div>
+                        <div class="service-actions">
+                            <a href="#" class="btn btn-primary" data-modal="insurance-calc">Розрахувати вартість</a>
+                            <a href="#contact-form" class="btn btn-outline">Консультація</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-list" id="tradein">
+            <div class="container">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="./assets/img/tradein.png" alt="Trade-in">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h2 class="service-title">Trade-in</h2>
+                        <div class="service-description">
+                            <p>Програма Trade-in дозволяє обміняти ваш поточний автомобіль на новий з доплатою. Це зручний та швидкий спосіб оновити автомобіль без зайвих клопотів з продажем.</p>
+                            <ul class="service-features">
+                                <li>Безкоштовна оцінка вашого автомобіля</li>
+                                <li>Викуп автомобілів будь-яких марок</li>
+                                <li>Економія часу на самостійному продажу</li>
+                                <li>Оформлення всіх документів у салоні</li>
+                                <li>Можливість поєднання з кредитними програмами</li>
+                            </ul>
+                        </div>
+                        <div class="service-actions">
+                            <a href="#tradein-form" class="btn btn-primary">Оцінити автомобіль</a>
+                            <a href="#contact-form" class="btn btn-outline">Дізнатися більше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-list" id="warranty">
+            <div class="container">
+                <div class="service-card reversed">
+                    <div class="service-image">
+                        <img src="./assets/img/garant.jfif" alt="Гарантія">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h2 class="service-title">Гарантійне обслуговування</h2>
+                        <div class="service-description">
+                            <p>Всі автомобілі, придбані в автосалоні Nissan, підлягають гарантійному обслуговуванню відповідно до умов виробника. Ми також пропонуємо додаткові програми розширеної гарантії.</p>
+                            <ul class="service-features">
+                                <li>Заводська гарантія від виробника</li>
+                                <li>Програми розширеної гарантії</li>
+                                <li>Гарантійне обслуговування в нашому сервісному центрі</li>
+                                <li>Швидке вирішення гарантійних випадків</li>
+                                <li>Оригінальні запчастини для заміни</li>
+                            </ul>
+                        </div>
+                        <div class="service-actions">
+                            <a href="#" class="btn btn-primary" data-modal="warranty-info">Умови гарантії</a>
+                            <a href="#contact-form" class="btn btn-outline">Запитати про гарантію</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-additional">
+            <div class="container">
+                <h2 class="section-title">Додаткові послуги</h2>
+                <div class="additional-services-grid">
+                    <div class="additional-service">
+                        <div class="additional-service-icon">
+                            <i class="fas fa-car-crash"></i>
+                        </div>
+                        <h3 class="additional-service-title">Допомога на дорозі</h3>
+                        <p class="additional-service-desc">Цілодобова технічна допомога на дорозі для клієнтів нашого автосалону</p>
+                    </div>
+                    <div class="additional-service">
+                        <div class="additional-service-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3 class="additional-service-title">Детейлінг</h3>
+                        <p class="additional-service-desc">Професійний догляд за автомобілем, полірування, хімчистка, захисні покриття</p>
+                    </div>
+                    <div class="additional-service">
+                        <div class="additional-service-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="additional-service-title">Тюнінг</h3>
+                        <p class="additional-service-desc">Встановлення додаткового обладнання та аксесуарів, доопрацювання автомобіля</p>
+                    </div>
+                    <div class="additional-service">
+                        <div class="additional-service-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3 class="additional-service-title">Реєстрація</h3>
+                        <p class="additional-service-desc">Допомога в оформленні та реєстрації автомобіля в державних органах</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-form-section" id="service-form">
+            <div class="container">
+                <h2 class="section-title">Запис на сервісне обслуговування</h2>
+                <div class="service-form-container">
+                    <form method="POST" class="service-form">
+                        <div class="form-group">
+                            <label for="client-name">Ваше ім'я</label>
+                            <input type="text" id="client-name" name="client-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="client-phone">Телефон</label>
+                            <input type="tel" id="client-phone" name="client-phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="car-model">Марка та модель авто</label>
+                            <input type="text" id="car-model" name="car-model" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service-type">Тип сервісу</label>
+                            <select id="service-type" name="service-type" required>
+                                <option value="">Оберіть тип сервісу</option>
+                                <option value="maintenance">Планове ТО</option>
+                                <option value="repair">Ремонт</option>
+                                <option value="diagnostics">Діагностика</option>
+                                <option value="tire">Шиномонтаж</option>
+                                <option value="body">Кузовні роботи</option>
+                                <option value="other">Інше</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="service-date">Бажана дата</label>
+                            <input type="date" id="service-date" name="service-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service-comment">Коментар</label>
+                            <textarea id="service-comment" name="service-comment" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkbox-text">Я погоджуюсь з <a href="privacy.html">політикою конфіденційності</a></span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Записатися на сервіс</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="tradein-form-section" id="tradein-form">
+            <div class="container">
+                <h2 class="section-title">Оцінка вашого автомобіля для Trade-in</h2>
+                <div class="tradein-form-container">
+                    <form method="POST" class="tradein-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="owner-name">Ваше ім'я</label>
+                                <input type="text" id="owner-name" name="owner-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="owner-phone">Телефон</label>
+                                <input type="tel" id="owner-phone" name="owner-phone" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="car-brand">Марка автомобіля</label>
+                                <input type="text" id="car-brand" name="car-brand" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="car-model-tradein">Модель</label>
+                                <input type="text" id="car-model-tradein" name="car-model" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="car-year">Рік випуску</label>
+                                <input type="number" id="car-year" name="car-year" min="1950" max="2025" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="car-mileage">Пробіг (км)</label>
+                                <input type="number" id="car-mileage" name="car-mileage" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="car-engine">Об'єм двигуна</label>
+                                <input type="text" id="car-engine" name="car-engine" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="car-fuel">Тип палива</label>
+                                <select id="car-fuel" name="car-fuel" required>
+                                    <option value="">Оберіть тип палива</option>
+                                    <option value="petrol">Бензин</option>
+                                    <option value="diesel">Дизель</option>
+                                    <option value="gas">Газ/Бензин</option>
+                                    <option value="hybrid">Гібрид</option>
+                                    <option value="electric">Електро</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="car-condition">Технічний стан</label>
+                            <select id="car-condition" name="car-condition" required>
+                                <option value="">Оберіть стан автомобіля</option>
+                                <option value="excellent">Відмінний</option>
+                                <option value="good">Добрий</option>
+                                <option value="average">Середній</option>
+                                <option value="needs-repair">Потребує ремонту</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="car-description">Додаткова інформація</label>
+                            <textarea id="car-description" name="car-description" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkbox-text">Я погоджуюсь з <a href="privacy.html">політикою конфіденційності</a></span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Відправити заявку</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact-form">
+            <div class="container">
+                <h2 class="section-title">Зв'язатися з нами</h2>
+                <div class="contact-form-container">
+                    <form method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ваше ім'я</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service-interest">Яка послуга вас цікавить?</label>
+                            <select id="service-interest" name="service-interest" required>
+                                <option value="">Оберіть послугу</option>
+                                <option value="sales">Купівля автомобіля</option>
+                                <option value="service">Сервісне обслуговування</option>
+                                <option value="financing">Кредитування</option>
+                                <option value="insurance">Страхування</option>
+                                <option value="tradein">Trade-in</option>
+                                <option value="warranty">Гарантійне обслуговування</option>
+                                <option value="other">Інше</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Повідомлення</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkbox-text">Я погоджуюсь з <a href="privacy.html">політикою конфіденційності</a></span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Надіслати запит</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-text">Nissan</span>
+                    </a>
+                    <p class="footer-description">
+                        Офіційний автосалон преміальних автомобілів в Україні. Продаж, сервіс, фінансові послуги.
+                    </p>
+                    <div class="footer-contacts">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>м. Київ, вул. Автомобільна, 1</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+380501234567">+38 (050) 123-45-67</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@nissan.ua">info@nissan.ua</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Навігація</h3>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="catalog.html">Каталог авто</a></li>
+                        <li><a href="services.html">Послуги</a></li>
+                        <li><a href="news.html">Новини</a></li>
+                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3 class="footer-title">Послуги</h3>
+                    <ul class="footer-menu">
+                        <li><a href="services.html#sales">Продаж авто</a></li>
+                        <li><a href="services.html#service">Сервісне обслуговування</a></li>
+                        <li><a href="services.html#financing">Кредитування</a></li>
+                        <li><a href="services.html#insurance">Страхування</a></li>
+                        <li><a href="services.html#tradein">Trade-in</a></li>
+                        <li><a href="services.html#warranty">Гарантія</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3 class="footer-title">Ми в соцмережах</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                    <div class="footer-subscribe">
+                        <h3 class="footer-title">Підписатися на новини</h3>
+                        <form action="#" method="POST" class="subscribe-form">
+                            <input type="email" name="email" placeholder="Ваш email" required>
+                            <button type="submit" class="btn btn-primary">OK</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 Nissan. Всі права захищені.
+                </div>
+                <div class="footer-policy">
+                    <a href="privacy.html">Політика конфіденційності</a>
+                    <a href="terms.html">Умови використання</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Прокрутити догори">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/services.js"></script>
+    <script src="assets/js/forms.js"></script>
+</body>
+</html> 

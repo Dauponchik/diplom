@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nissan - Офіційний автосалон</title>
+    <!-- Підключення стилів -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/forms.css">
+    <!-- Підключення шрифтів Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome для іконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка сайту -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Nissan</span>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Головна</a></li>
+                    <li><a href="catalog.html" class="nav-link">Каталог авто</a></li>
+                    <li><a href="services.html" class="nav-link">Послуги</a></li>
+                    <li><a href="news.html" class="nav-link">Новини</a></li>
+                    <li><a href="about.html" class="nav-link">Про нас</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <button class="mobile-menu-toggle" aria-label="Відкрити меню">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Головний слайдер -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <div class="slide-bg" style="background-image: url('./assets/img/700x350.jpg');"></div>
+                <div class="container">
+                    <div class="slide-content">
+                        <h1 class="slide-title">Нові моделі 2025 року</h1>
+                        <p class="slide-description">Відкрийте для себе нові можливості разом з Nissan</p>
+                        <a href="catalog.html" class="btn btn-primary">Переглянути моделі</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('./assets/img/autosalon2.jpg');"></div>
+                <div class="container">
+                    <div class="slide-content">
+                        <h1 class="slide-title">Спеціальні пропозиції</h1>
+                        <p class="slide-description">Вигідні умови кредитування та лізингу</p>
+                        <a href="services.html#financing" class="btn btn-primary">Дізнатися більше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('./assets/img/autosalon3.jpg');"></div>
+                <div class="container">
+                    <div class="slide-content">
+                        <h1 class="slide-title">Преміальний сервіс</h1>
+                        <p class="slide-description">Обслуговування на найвищому рівні</p>
+                        <a href="services.html" class="btn btn-primary">Наші послуги</a>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-nav prev" aria-label="Попередній слайд"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-nav next" aria-label="Наступний слайд"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок популярних моделей -->
+    <section class="popular-models">
+        <div class="container">
+            <h2 class="section-title">Популярні моделі</h2>
+            <div class="models-grid">
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="./assets/img/Nissan Qashqai.png" alt="Nissan Qashqai">
+                        <div class="car-badge">Хіт продажів</div>
+                    </div>
+                    <div class="car-details">
+                        <h3 class="car-title">Nissan Qashqai</h3>
+                        <div class="car-specs">
+                            <span class="car-year">2023</span> |
+                            <span class="car-engine">1.3 TCe</span> |
+                            <span class="car-power">158 к.с.</span>
+                        </div>
+                        <div class="car-price">$32,000</div>
+                        <div class="car-actions">
+                            <a href="car-details.html" class="btn btn-outline">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="./assets/img/Nissan X-Trail.png" alt="Nissan X-Trail">
+                    </div>
+                    <div class="car-details">
+                        <h3 class="car-title">Nissan X-Trail</h3>
+                        <div class="car-specs">
+                            <span class="car-year">2022</span> |
+                            <span class="car-engine">1.5 CVT</span> |
+                            <span class="car-power">204 к.с.</span>
+                        </div>
+                        <div class="car-price">$38,000</div>
+                        <div class="car-actions">
+                            <a href="x-trail.html" class="btn btn-outline">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="./assets/img/Nissan Leaf.png" alt="Nissan Leaf">
+                        <div class="car-badge">Новинка</div>
+                    </div>
+                    <div class="car-details">
+                        <h3 class="car-title">Nissan Leaf</h3>
+                        <div class="car-specs">
+                            <span class="car-year">2024</span> |
+                            <span class="car-engine">Електричний</span> |
+                            <span class="car-power">150 к.с.</span>
+                        </div>
+                        <div class="car-price">$29,000</div>
+                        <div class="car-actions">
+                            <a href="leaf.html" class="btn btn-outline">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="./assets/img/Nissan Juke.png" alt="Nissan Juke">
+                    </div>
+                    <div class="car-details">
+                        <h3 class="car-title">Nissan Juke</h3>
+                        <div class="car-specs">
+                            <span class="car-year">2021</span> |
+                            <span class="car-engine">1.0 TCe</span> |
+                            <span class="car-power">114 к.с.</span>
+                        </div>
+                        <div class="car-price">$25,000</div>
+                        <div class="car-actions">
+                            <a href="juke.html" class="btn btn-outline">Детальніше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="catalog.html" class="btn btn-primary">Переглянути весь каталог</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок переваг автосалону -->
+    <section class="advantages">
+        <div class="container">
+            <h2 class="section-title">Чому обирають Nissan</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="advantage-title">Офіційний дилер</h3>
+                    <p class="advantage-text">Гарантія від виробника та оригінальні запчастини для вашого авто</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="advantage-title">Якісний сервіс</h3>
+                    <p class="advantage-text">Висококваліфіковані спеціалісти та сучасне обладнання</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3 class="advantage-title">Гнучкі умови фінансування</h3>
+                    <p class="advantage-text">Вигідні кредитні та лізингові програми для наших клієнтів</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="advantage-title">Персональний підхід</h3>
+                    <p class="advantage-text">Індивідуальний консультант для кожного клієнта</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок новин та спецпропозицій -->
+    <section class="news-offers">
+        <div class="container">
+            <div class="tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="news">Новини</button>
+                    <button class="tab-btn" data-tab="offers">Спецпропозиції</button>
+                </div>
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="news">
+                        <div class="news-grid">
+                            <div class="news-card">
+                                <div class="news-image">
+                                    <img src="./assets/img/autosalon2.jpg" alt="Презентація нових моделей Nissan 2025">
+                                    <div class="news-date">15 березня 2025</div>
+                                </div>
+                                <div class="news-content">
+                                    <h3 class="news-title">Презентація нових моделей Nissan 2025</h3>
+                                    <p class="news-excerpt">Nissan провів ексклюзивну презентацію нової лінійки Nissan 2025 року. Гості заходу першими в Україні побачили оновлені моделі та мали можливість записатися на тест-драйв...</p>
+                                    <a href="news-detail.html?id=1" class="news-link">Читати далі</a>
+                                </div>
+                            </div>
+                            <div class="news-card">
+                                <div class="news-image">
+                                    <img src="./assets/img/Nissan Qashqai.png" alt="Новий Nissan Qashqai">
+                                    <div class="news-date">5 березня 2024</div>
+                                </div>
+                                <div class="news-content">
+                                    <h3 class="news-title">Новий Nissan Qashqai вже в Україні</h3>
+                                    <p class="news-excerpt">Флагманська модель Nissan нового покоління тепер доступна в Україні. Перші екземпляри вже в нашому автосалоні і готові до тест-драйву.</p>
+                                </div>
+                            </div>
+                            <div class="news-card">
+                                <div class="news-image">
+                                    <img src="./assets/img/opendoor.webp" alt="День відкритих дверей">
+                                    <div class="news-date">28 лютого 2024</div>
+                                </div>
+                                <div class="news-content">
+                                    <h3 class="news-title">День відкритих дверей в Nissan</h3>
+                                    <p class="news-excerpt">Запрошуємо всіх автолюбителів на день відкритих дверей в наш автосалон. У програмі: презентація нових моделей, тест-драйви, розіграші та фуршет.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="offers">
+                        <div class="offers-grid">
+                            <div class="offer-card">
+                                <div class="offer-badge">-10%</div>
+                                <div class="offer-image">
+                                    <img src="./assets/img/discount.jfif" alt="Спеціальна пропозиція">
+                                </div>
+                                <div class="offer-content">
+                                    <h3 class="offer-title">Знижка на моделі попереднього року</h3>
+                                    <p class="offer-text">Спеціальна пропозиція на автомобілі 2024 року випуску. Знижка до 10%!</p>
+                                    <div class="offer-period">До 30 червня 2025</div>
+                                </div>
+                            </div>
+                            <div class="offer-card">
+                                <div class="offer-badge">0% переплати</div>
+                                <div class="offer-image">
+                                    <img src="./assets/img/your.jfif" alt="Кредитування">
+                                </div>
+                                <div class="offer-content">
+                                    <h3 class="offer-title">Кредит без переплати</h3>
+                                    <p class="offer-text">Придбайте автомобіль в кредит з 0% переплатою на перші 6 місяців.</p>
+                                    <div class="offer-period">До 1 липня 2025</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок запису на тест-драйв -->
+    <section class="testdrive">
+        <div class="container">
+            <div class="testdrive-container">
+                <div class="testdrive-content">
+                    <h2 class="section-title">Запишіться на тест-драйв</h2>
+                    <p class="testdrive-text">Оберіть автомобіль своєї мрії та запишіться на тест-драйв в зручний для Вас час</p>
+                </div>
+                <div class="testdrive-form">
+                    <form action="#" method="POST" id="testdrive-form">
+                        <div class="form-group">
+                            <select name="car_model" id="car_model" required>
+                                <option value="">Оберіть модель</option>
+                                <option value="qashqai">Nissan Qashqai</option>
+                                <option value="x-trail">Nissan X-Trail</option>
+                                <option value="leaf">Nissan Leaf</option>
+                                <option value="juke">Nissan Juke</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder="Ваше ім'я" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" name="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-full">Записатися</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок партнерів -->
+    <section class="partners">
+        <div class="container">
+            <h2 class="section-title">Наші партнери</h2>
+            <div class="partners-slider">
+                <div class="partner-logo">
+                    <img src="./assets/img/mitsubishilogo.png" alt="Партнер 1">
+                </div>
+                <div class="partner-logo">
+                    <img src="./assets/img/autologo.png" alt="Партнер 2">
+                </div>
+                <div class="partner-logo">
+                    <img src="./assets/img/renologo.jpg" alt="Партнер 3">
+                </div>
+                <div class="partner-logo">
+                    <img src="./assets/img/viklogo.jfif" alt="Партнер 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Підвал сайту -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-text">Nissan</span>
+                    </a>
+                    <p class="footer-description">
+                        Офіційний автосалон преміальних автомобілів в Україні. Продаж, сервіс, фінансові послуги.
+                    </p>
+                    <div class="footer-contacts">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>м. Київ, вул. Автомобільна, 1</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+380501234567">+38 (050) 123-45-67</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@nissan.ua">info@nissan.ua</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Навігація</h3>
+                    <ul class="footer-menu">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="catalog.html">Каталог авто</a></li>
+                        <li><a href="services.html">Послуги</a></li>
+                        <li><a href="news.html">Новини</a></li>
+                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3 class="footer-title">Послуги</h3>
+                    <ul class="footer-menu">
+                        <li><a href="services.html#sales">Продаж авто</a></li>
+                        <li><a href="services.html#service">Сервісне обслуговування</a></li>
+                        <li><a href="services.html#financing">Кредитування</a></li>
+                        <li><a href="services.html#insurance">Страхування</a></li>
+                        <li><a href="services.html#tradein">Trade-in</a></li>
+                        <li><a href="services.html#warranty">Гарантія</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3 class="footer-title">Ми в соцмережах</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                    <div class="footer-subscribe">
+                        <h3 class="footer-title">Підписатися на новини</h3>
+                        <form action="#" method="POST" class="subscribe-form">
+                            <input type="email" name="email" placeholder="Ваш email" required>
+                            <button type="submit" class="btn btn-primary">OK</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 Nissan. Всі права захищені.
+                </div>
+                <div class="footer-policy">
+                    <a href="privacy.html">Політика конфіденційності</a>
+                    <a href="terms.html">Умови використання</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка прокрутки догори -->
+    <button class="scroll-top" id="scrollTop" aria-label="Прокрутити догори">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/forms.js"></script>
+</body>
+</html> 

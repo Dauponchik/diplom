@@ -1,0 +1,356 @@
+/* Стилі для сторінки логіну/реєстрації */
+
+.login-page {
+    padding-bottom: 60px;
+}
+
+.login-section {
+    padding: 40px 0;
+}
+
+/* Контейнер для форм авторизації */
+.auth-container {
+    max-width: 500px;
+    margin: 0 auto 60px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Таби для перемикання між формами */
+.auth-tabs {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+.auth-tabs .tab-btn {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    background-color: #f7f7f7;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.auth-tabs .tab-btn:hover {
+    background-color: #eee;
+}
+
+.auth-tabs .tab-btn.active {
+    background-color: #fff;
+    color: #D81F26;
+    position: relative;
+}
+
+.auth-tabs .tab-btn.active:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #D81F26;
+}
+
+/* Контент форм */
+.auth-content {
+    padding: 30px;
+}
+
+.auth-form {
+    display: none;
+}
+
+.auth-form.active {
+    display: block;
+}
+
+/* Стилі для полів форми */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #444;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="tel"],
+.auth-form input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.auth-form input:focus {
+    border-color: #1A2B47;
+    outline: none;
+}
+
+/* Стилі для полів з паролем */
+.password-field {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    color: #999;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.toggle-password:hover {
+    color: #666;
+}
+
+/* Індикатор надійності паролю */
+.password-strength {
+    margin-top: 10px;
+}
+
+.strength-meter {
+    height: 4px;
+    background-color: #eee;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
+.strength-meter-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.strength-meter-fill[data-strength="0"] {
+    width: 25%;
+    background-color: #ff4136;
+}
+
+.strength-meter-fill[data-strength="1"] {
+    width: 50%;
+    background-color: #ffad29;
+}
+
+.strength-meter-fill[data-strength="2"] {
+    width: 75%;
+    background-color: #28a745;
+}
+
+.strength-meter-fill[data-strength="3"] {
+    width: 100%;
+    background-color: #28a745;
+}
+
+.strength-text {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Чекбокси */
+.form-checkbox {
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-checkbox input {
+    width: auto;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.form-checkbox label {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.form-checkbox a, .forgot-password {
+    color: #D81F26;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.form-checkbox a:hover, .forgot-password:hover {
+    text-decoration: underline;
+}
+
+.forgot-password {
+    font-size: 14px;
+}
+
+/* Кнопки дій */
+.form-actions {
+    margin-top: 25px;
+}
+
+.form-actions .btn-primary {
+    padding: 12px;
+}
+
+/* Соціальний логін */
+.social-login {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.social-login-title {
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 14px;
+    position: relative;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+    flex: 1;
+}
+
+.social-btn:hover {
+    opacity: 0.9;
+}
+
+.social-btn-fb {
+    background-color: #3b5998;
+}
+
+.social-btn-google {
+    background-color: #dd4b39;
+}
+
+/* Переваги особистого кабінету */
+.login-benefits {
+    margin-top: 50px;
+}
+
+.benefits-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1A2B47;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.benefit-item {
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    color: #D81F26;
+}
+
+.benefit-icon i {
+    font-size: 28px;
+}
+
+.benefit-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1A2B47;
+}
+
+.benefit-text {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Медіа-запити */
+@media (max-width: 1200px) {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .auth-container {
+        max-width: 100%;
+    }
+    
+    .auth-content {
+        padding: 20px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .social-buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .auth-tabs .tab-btn {
+        font-size: 14px;
+        padding: 12px 10px;
+    }
+} 

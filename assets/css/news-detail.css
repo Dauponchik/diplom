@@ -1,0 +1,266 @@
+/**
+ * Стилі для сторінки детальної інформації про новину
+ */
+
+/* Загальні стилі сторінки */
+.news-detail-page {
+    padding-bottom: 60px;
+}
+
+/* Заголовок новини */
+.news-header {
+    margin-bottom: 30px;
+}
+
+.news-detail .news-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    color: #1A2B47;
+}
+
+.news-detail .news-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    z-index: 1;
+}
+
+/* Додаємо стилі для елементів дати та переглядів */
+.news-detail .news-date, 
+.news-detail .news-views {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: none;
+    position: relative;
+}
+
+/* Додаємо стилі для іконок */
+.news-detail .news-date i, 
+.news-detail .news-views i {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-share {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.share-label {
+    font-size: 14px;
+    color: #666;
+}
+
+.share-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.share-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #f0f4f8;
+    color: #1A2B47;
+    transition: all 0.3s ease;
+}
+
+.share-btn:hover {
+    background-color: #D81F26;
+    color: #fff;
+}
+
+/* Головне зображення */
+.news-featured-image {
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-featured-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Вміст новини */
+.news-content {
+    margin-bottom: 50px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.news-content h2 {
+    font-size: 24px;
+    margin: 40px 0 20px;
+    color: #1A2B47;
+}
+
+.news-content p {
+    margin-bottom: 20px;
+}
+
+.news-content ul, 
+.news-content ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.news-content li {
+    margin-bottom: 10px;
+}
+
+.news-content a {
+    color: #D81F26;
+    text-decoration: none;
+}
+
+.news-content a:hover {
+    text-decoration: underline;
+}
+
+/* Галерея в новині */
+.news-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.gallery-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Цитата */
+blockquote {
+    margin: 30px 0;
+    padding: 20px 30px;
+    background-color: #f0f4f8;
+    border-left: 4px solid #D81F26;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #1A2B47;
+}
+
+/* Відео в новині */
+.news-video {
+    margin: 30px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-video iframe {
+    display: block;
+}
+
+/* Секція CTA */
+.news-cta {
+    background-color: #f0f4f8;
+    padding: 30px;
+    margin: 40px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.news-cta h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #1A2B47;
+}
+
+.news-cta .btn {
+    padding: 12px 24px;
+    font-size: 16px;
+}
+
+/* Схожі новини */
+.related-news {
+    margin-bottom: 60px;
+}
+
+.related-news .news-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Адаптивний дизайн */
+@media (max-width: 992px) {
+    .news-detail .news-title {
+        font-size: 30px;
+    }
+    
+    .related-news .news-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .news-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .news-detail .news-title {
+        font-size: 24px;
+    }
+    
+    .news-detail .news-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    /* Додаємо стилі для коректного відображення дати на мобільних */
+    .news-detail .news-date, 
+    .news-detail .news-views {
+        margin-right: 0;
+        min-width: 150px; /* Забезпечуємо мінімальну ширину для запобігання проблем верстки */
+    }
+    
+    .related-news .news-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .news-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    blockquote {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+    
+    .news-video iframe {
+        height: 300px;
+    }
+} 
